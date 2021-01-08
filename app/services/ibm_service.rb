@@ -12,7 +12,7 @@ class IbmService
 
   def self.conn
     Faraday.new('https://api.us-south.tone-analyzer.watson.cloud.ibm.com/instances/e43293fc-edcd-470e-837a-d3ceeed6e416') do |connection|
-      connection.basic_auth('apikey', '0Ydl4Ty3cY3j0JodElnByejShm6F93wccZnaf2pCKruq' )
+      connection.basic_auth('apikey', ENV['IBM_APIKEY'] )
     end 
   end
 
