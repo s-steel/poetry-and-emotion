@@ -22,6 +22,10 @@ describe 'As a user' do
         expect(page).to have_css('.poem')
         poem = find('.poem').text
         expect(poem).to_not be_empty
+
+        expect(page).to have_css('.tone')
+        tone = find('.tone').text
+        expect(tone).to_not be_empty
       end
     end
   end

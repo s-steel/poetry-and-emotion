@@ -8,4 +8,8 @@ class Poetry
     @author = data[:author]
     @poem = data[:lines].join(' ')
   end
+
+  def tones
+    ToneFacade.analyze_tone(@poem).tones
+  end
 end

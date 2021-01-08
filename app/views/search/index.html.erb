@@ -5,9 +5,6 @@
     <p class='title'>Title: <%= p.title %></p>
     <p class='author'>Author: <%= p.author %></p>
     <p class='poem'>Poem: <%= p.poem %></p>
-  </div>
-
-  <div class='tone'>
-    <p>The tone for this poem:</p>
+    <p class='tone'>The tone(s) for this poem: <%= p.tones.join(', ') %></p>
   </div>
 <% end %>
