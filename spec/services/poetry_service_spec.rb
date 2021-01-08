@@ -3,7 +3,7 @@ require 'rails_helper'
 describe 'PoetryDB service' do 
   it 'search will return poems' do 
     response = PoetryService.search_poems('Emily', 5)
-    
+  
     expect(response.length).to eq(5)
     expect(response).to be_an(Array)
     expect(response[0]).to be_a(Hash)
