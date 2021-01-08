@@ -1,0 +1,9 @@
+<h1>Here is the first <%= @poetry.length %> results that meet your search criteria:</h1>
+
+<% @poetry.each do |p| %>
+  <div class='poetry'>
+    <p class='title'>Title: <%= p.title %></p>
+    <p class='author'>Author: <%= p.author %></p>
+    <p class='poem'>Poem: <%= p.poem %></p>
+  </div>
+<% end %>
